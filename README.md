@@ -30,5 +30,5 @@ torch version 1.13.1
 Python version - 3.9.0 
 Torchaudio version: 0.13.1
 ### Changes Made inside Codebase for Positional Phonemes:
-- [train_fs2.py](https://github.com/AIFahim/testgit/blob/master/train_fs2.py) : Positional phoneme characters list added, And tokens -> ('<PAD>', '<EOS>','<BOS>','<BLNK>') added.
+- [train_fs2.py](https://github.com/AIFahim/testgit/blob/master/train_fs2.py) : Positional phoneme characters list added, And tokens -> (<PAD>, <EOS>,<BOS>,<BLNK>) added.
 - [characters.py](https://github.com/AIFahim/testgit/blob/master/TTS/tts/utils/text/characters.py): Added positional phoneme characters characters list to the _characters & _vocab variables. Changes made in _create_vocab() - method.
