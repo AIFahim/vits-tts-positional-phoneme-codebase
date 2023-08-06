@@ -40,9 +40,9 @@ async def infer(body:Body):
     phonme = response.json()['output']
     phonme = " ".join(phonme)
     wav=synth.tts(phonme)
-    synth.save_wav(wav,"/home/asif/tts_all/coqui_tts/my_exp/coqui_vits_48k_pos_pho_weight/output_audio/vits.wav")
+    synth.save_wav(wav,"/infered_audio/vits.wav")
 
-    with open("/home/asif/tts_all/coqui_tts/my_exp/coqui_vits_48k_pos_pho_weight/output_audio/vits.wav", "rb") as f:
+    with open("/infered_audio/vits.wav", "rb") as f:
         audio_data = f.read()
 
     base64_audio = base64.b64encode(audio_data).decode("utf-8") 

@@ -22,7 +22,7 @@ def infer(grapheme:str):
     phonme = " ".join(phonme)
     
     wav=synth.tts(phonme)
-    synth.save_wav(wav,"/home/asif/tts_all/coqui_tts/my_exp/coqui_vits_48k_pos_pho_weight/output_audio/vits.wav")
+    synth.save_wav(wav,"/infered_audio/vits.wav")
  
 if __name__ == "__main__":
     infer("গিনেস বুকে ১২ বার নাম লিখিয়েছেন মাগুরার মাহমুদুল")
